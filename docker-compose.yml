@@ -7,9 +7,13 @@ services:
                         - MYSQL_DATABASE=cakephp
                         - MYSQL_USER=cakephp
                         - MYSQL_PASSWORD=secret
+                ports:
+                        - '3306:3306'
         web:
                 build: web                
                 volumes:
-                - ./src:/var/www/html
+                        - ./src:/var/www/html
                 ports:
-                - 80:80
+                        - 80:80
+                links:
+                        - db
