@@ -7,3 +7,7 @@ services:
                         - MYSQL_DATABASE=cakephp
                         - MYSQL_USER=cakephp
                         - MYSQL_PASSWORD=secret
+        web:
+                build: web                
+                ports:
+                - 80:80
