@@ -9,5 +9,7 @@ services:
                         - MYSQL_PASSWORD=secret
         web:
                 build: web                
+                volumes:
+                - ./src:/var/www/html
                 ports:
                 - 80:80
