@@ -11,5 +11,4 @@ php composer-setup.php --filename=composer;\
 php -r "unlink('composer-setup.php');" ;\
 mv composer /usr/local/bin/composer
 
-CMD /bin/bash
 
