@@ -11,6 +11,8 @@ services:
                         - '3306:3306'
         web:
                 build: web                
+                environment:
+                        DB_HOST: db
                 volumes:
                         - ./src:/var/www/html
                 ports:
