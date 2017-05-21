@@ -2,7 +2,7 @@
 
 class SampleTest extends PHPUnit_Framework_TestCase
 {
-	public function sampleTest()
+	public function test()
 	{
 		$this->assertSame(1,1);
 	}
